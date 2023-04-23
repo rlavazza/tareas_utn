@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Tarea Unidad 4 - JavaScript</h1>
+    <h3>Medio de transporte según distancia</h3>
+    <script>
+
+        distancia = parseInt(prompt('Ingrese distancia en metros:', ''));
+
+        if (distancia >= 0 && distancia < 1000) { 
+            document.write('Puede hacer el recorrido a pie.');
+        } else if (distancia >= 1000 && distancia < 10000) {
+            document.write('Puede hacer el recorrido en bicicleta.');
+        } else if (distancia >= 10000 && distancia < 30000) {
+            document.write('Puede hacer el recorrido en colectivo.');
+        } else if (distancia >= 30000 && distancia < 100000) {
+            document.write('Debe hacer el recorrido en auto.');
+        } else {
+            document.write('Debe hacer el recorrido en avión.');
+        }
+    </script>
+    <!-- agregado de una opción más simple:
+distancia=2500;
+transporte="";
+if (distancia >= 0 && distancia < 1000) { 
+   transporte="pie";
+}
+document.write('Recomendamos hacer el recorrido en ${tranporte}'); -->
+    
+    <h3>Array de números</h3>
+    <script>
+let edad=[6,25,8,52,36,85,18,72,94];
+let may= 0;
+for (let i=0; i<edad.length; i++){
+    if(edad[i]> may)
+            { may=edad[i]   }
+}
+    document.write(`La edad mayor es ${may}`);
+
+    </script>
+</body>
+</html>        

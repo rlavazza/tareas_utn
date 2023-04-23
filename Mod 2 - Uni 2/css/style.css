@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sofia+Sans:wght@100&display=swap');
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url(../images/degradados.jpg);
+    background-size: cover;
+}
+
+.nav {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    color: aliceblue;
+    border: 2px solid rgb(172, 172, 241);
+    border-radius: 2px;
+}
+
+.box,.tabla {
+    margin: 0 auto;
+
+}
+
+.carousel {
+    width: 700px;
+}
+
+.card-title {
+    font-weight: bold;
+   }
+
+.tabla {
+    background-color: aliceblue;
+
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.back {
+    text-align: center;
+}
+
+
+.btn {
+    font-size: 20px;
+    font-weight: bold;
+}

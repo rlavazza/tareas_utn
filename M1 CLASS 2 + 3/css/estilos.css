@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 25px;
+    background-color: rgb(232, 228, 228);
+}
+
+h1 {
+    font-size: 60px;
+    font-size: bold;
+    color: aliceblue;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.portada {
+    height: 450px;
+    position: relative;
+    background-image: url(../img/31363.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nombre {
+    position: absolute;
+    top: 50px;
+    left: 240px;
+}
+
+.nombre p {
+    color: aliceblue;
+}
+
+.rox {
+    width: 500px;
+    border: 2px solid rgb(227, 221, 221);
+    border-radius: 25px;
+    position: absolute;
+    right: 450px;
+    top: 50px
+}
+
+
+.pics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pics img {
+    border: 2px solid black;
+    height: 350px;
+}
+
+#contacto {
+    background-image: url(../img/31363.jpg);
+    background-size:cover;
+   
+}
+.form{margin-left:450px;
+color: aliceblue;
+font-size: 16px;
+font-weight: bold;
+}
+
+input, select {
+    margin-bottom: 20px;
+  }
+
+textarea {
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer{background-color: whitesmoke;
+margin-top: 20px;
+padding: 20px;}
+
+footer a{margin-left:  30px;}

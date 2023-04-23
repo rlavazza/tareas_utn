@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Sofia+Sans:wght@100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formulario</title>
+</head>
+
+<body id="contacto">
+    <header>
+        <h2>Formulario de contacto</h2>
+    </header>
+    <main>
+        <div class="form">
+            <form action="" method="post">
+                <div> <label for="nom">Nombre:</label>
+                    <input type="text" name="nombre" />
+                    <label for="nom">Apellido:</label>
+                    <input type="text" name="apellido" />
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" />
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" />
+                </div>
+                <div> <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" value="femenino" /><label>Femenino</label>
+                    <input type="radio" name="sexo" value="masculino" /><label>Masculino</label>
+                </div>
+                <div>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <select name="nacionalidad" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="chile">Chile</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Idiomas:</label>
+                    <input type="checkbox" name="idiomas" value="español"><label for="español">Español</label>
+                    <input type="checkbox" name="idiomas" value="ingles"><label for="ingles">Inglés</label>
+                    <input type="checkbox" name="idiomas" value="portugues"><label for="portugues">Portugués</label>
+                    <input type="checkbox" name="idiomas" value="otros"><label for="otros">Otros</label>
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios: <br />
+                        <textarea name="comentarios" id="" cols="70" rows="10" maxlength="255"></textarea></label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

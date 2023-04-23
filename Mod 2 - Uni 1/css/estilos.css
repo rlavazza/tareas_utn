@@ -1,0 +1,25 @@
+
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1{font-size: 26px;
+margin-top: 20px;
+margin-left: 30px;}
+
+.one, .two, .three{
+    width: 100px;
+    height: 100px;
+display: inline-block;
+border: 2px solid black;
+margin-top: 20px;
+margin-left: 30px;
+}
+
+.one{background-color: #ff55c4;}
+
+.two{background-color: #e626d0;}
+
+.three{background-color:#aa4edb;}
+
