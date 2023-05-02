@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+
+
+body {
+       font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link,
+footer p {
+       color: white
+}
+
+.nav-link:hover,
+.mapa:hover {
+       color: white;
+       font-weight: bold;
+}
+
+.navbar-expand-lg {
+       background-color: #db2205;
+}
+
+.portada {
+       background-image: url(../images/parapente.jpg);
+       background-size: cover;
+       height: 600px;
+       color: bisque;
+       position: relative;
+}
+
+h1 {
+       font-size: 48px;
+       font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+       font-size: 34px;
+       font-weight: bold;
+       color: bisque;
+}
+
+.titulo {
+       padding-top: 30px;
+}
+
+.titulo span {
+       font-size: 22px;
+}
+
+.titulo p {
+       font-size: 18px;
+}
+
+.icono {
+       text-decoration: none;
+       color: white;
+}
+
+#aventuras{height: 300px;}
+
+.contenido {
+       background: linear-gradient(black, rgb(241, 237, 237));
+}
+
+
+.promos {
+       list-style-type: none;
+}
+
+.promos li {
+       font-size: 18px;
+       font-weight: bold;
+       color: bisque;
+}
+
+.promos li a img {
+       height: 80px;
+       width: 160px;
+       margin: 8px 10px 0px 0px;
+       border: 1px solid black;
+}
+
+.promos li a:hover img {
+       border: 3px solid black;
+}
+
+.picmod {
+       /*fotos de modal*/
+       width: 465px;
+       border: 2px solid bisque;
+       border-radius: 4px;
+       margin-top: 2px;
+}
+
+.modal-content {
+       background-color: black;
+       color: bisque
+}
+
+.btn-close {
+       color: bisque;
+       font-weight: bold;
+}
+
+.carousel {
+       width: 380px;
+       height: 220px;
+       background-color: rgb(17, 13, 13);
+
+}
+
+h5 {
+    font-size: 22px;
+}
+
+.testimonio {
+       color: white;
+       text-align: center;
+       padding: 50px 40px;
+       font-size: 18px;
+}
+
+
+.nos {
+       width: 90%;
+       height: 600px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       margin: 2px auto;
+       border-radius: 8px;
+}
+
+.box {
+       width: 250px;
+       height: 520px;
+       border: 2px solid black;
+       padding: 7px;
+       box-shadow: 15px 20px 30px black;
+}
+
+.box:hover {
+       border: 3px solid black;
+}
+
+.card-title {
+       padding: 1px;
+       font-size: 19px;
+       font-weight: bold;
+}
+
+.card-subtitle {
+       font-size: 16px;
+       text-align: center;
+       color: #484646;
+       font-weight: bold;
+}
+
+.card-text {
+       font-size: 14px;
+       padding: 0 1px;
+}
+
+
+.mp {
+       width: 100%;
+       aspect-ratio: 1.2;
+       border: 2px solid #8f8ff0;
+       border-radius: 5px;
+       margin: 4px;
+}
+
+.form-label {
+       font-size: 16px;
+       font-weight: bold;
+}
+
+.form-control {
+       border: 2px solid #8f8ff0;
+}
+
+.submit:hover {
+       color: black;
+}
+
+footer {
+       background-color: rgb(49, 47, 47);
+}
+
+html {
+       scroll-behavior: smooth;
+}
+
+.scroll-section {
+       scroll-margin-top: 60px;
+}

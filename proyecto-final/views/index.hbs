@@ -1,0 +1,137 @@
+<div class="portada container-fluid mt-5">
+    <div class="row">
+        <div class="titulo col-4 ps-5">
+            <span>Mendoza</span>
+            <h1 class="py-2">Aventura Extrema</h1>
+            <p class="pe-5">Lorem ipsum dolor sit amet consectetur adipisicing elit repellat blanditiis, dolorem iste,
+                labore explicabo adipisci praesentium quisquam rem quidem aspernatur molestiae voluptas.</p>
+        </div> <!-- cierra fila -->
+        <div class="row">
+            <a href="#visitanos" class="icono position-absolute bottom-0 start-0 pb-5 ps-5">Visitá nuestra base <img
+                    src="images/map.png" alt=""></a>
+        </div> <!-- cierra 2da fila -->
+    </div>
+</div> <!-- cierre portada -->
+<div class="container-fluid contenido">
+    <div id="actividades" class="row scroll-section">
+        <h2>desarrollar actividades</h2>
+    </div>
+    <div id="novedades" class="row scroll-section">
+        <h2 class=" my-4 ps-5">Novedades</h2>
+        <div class="col-sm-4 ps-3">
+            <ul class="promos">
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo1">
+                        <img src="images/camping.jpg" alt=""></a>Camping + Rafting</li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo2"><img src="images/IMG_0169.JPG"
+                            alt="rafting"></a>Promo 2</li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo3"><img src="images/rafting2.jpg"
+                            alt="carpa"></a>Promo 3</li>
+            </ul>
+        </div> <!-- cierre primer col novedades -->
+        <div class="col-sm-4">
+            <ul class="promos">
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo4"><img src="images/escalada.jpg"
+                            alt=""></a>Promo 4
+                </li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo5"><img src="images/kayak2.jpg"
+                            alt=""></a>Promo 5
+                </li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#promo6"><img src="images/rafting3.jpg"
+                            alt=""></a>Promo 6
+                </li>
+            </ul>
+        </div>
+
+        <!-- modal -->
+        <div class="modal fade" id="promo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Camping + Rafting</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Camping en Cerro Negro y recorrido de rafting de 28 km por el Río Mendoza. lorem ipsum dolor
+                            sit amet,
+                            consectetur adipisicing elit. Aperiam accusantium voluptatem ipsam nesciunt quia eveniet
+                            facilis
+                            corrupti ad recusandae. <b>$ 88.888.-</b> </p>
+                        <img src="images/camping.jpg" class="picmod" alt="camping">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fin modal 1 -->
+
+
+        <div class="col-sm-4">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>Experiencia increíble el parapente!</h5>
+                            <p>Juan, Caballito.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Fui al campamento y la pasamos genial. El rafting en la mañana alucinante.</h5>
+                            <p>Camila, San Luis.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>El rafting estuvo buenísimo, el guía un genio!</h5>
+                            <p>Pedro, Belgrano.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div> <!-- cierre row novedades-test -->
+        <div id="contacto" class="row scroll-section mb-5">
+            <div class="col 12 col-sm-4 pt-3 ms-4">
+                <h2>Visitanos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26789.06626804996!2d-69.21337879171358!3d-32.93428583364745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dec31f509aa63%3A0x25784463ce0705!2sPotrerillos%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1681262495347!5m2!1ses!2sar"
+                    class="mp"></iframe>
+
+            </div>
+            <div class="col-12 col-sm-7 pt-3 mx-5">
+                <h2>Contacto</h2>
+                <div class="col-sm-10 pt-3">
+                    <form action="/" method="post" class="formulario">
+                        <div class="py-1">
+                            <label for="nombre" class="form-label">Nombre y apellido:</label>
+                            <input type="text" class="form-control" name="nombre">
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-1">
+                                <label for="email" class="form-label">Email:</label><input type="text"
+                                    class="form-control" name="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-6 py-1">
+                                <label for="tel" class="form-label">Teléfono:</label><input type="tel"
+                                    class="form-control" name="tel">
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="5"></textarea>
+                        </div>
+                </div>
+                <button class="btn btn-secondary border-dark px-3 my-2" type="submit">Enviar</button>
+                </form>
+                <p>{{message}}</p>
+            </div>
+        </div>
+    </div> <!-- cierre modulo contacto -->
