@@ -30,7 +30,7 @@ auth:{
 
 });
 var info = await transport.sendMail(obj);
-res.render('/',{
+res.render('index',{
   message: 'Mensaje enviado'
 });
 });
