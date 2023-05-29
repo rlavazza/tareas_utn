@@ -85,7 +85,7 @@ h3 {
 }
 
 .contenido2 {
-       background: linear-gradient(black, rgb(245, 237, 237));
+       background: linear-gradient(black, rgb(221, 216, 216));
 }
 
 .ofertas {
@@ -155,16 +155,18 @@ h3 {
        justify-content: space-evenly;
        padding-top: 80px;
        margin: auto;
-    }
-
-#contacto{color: black;
-     
 }
+
+#contacto {
+       color: black;
+
+}
+
 .carousel {
        width: 640px;
        border: 3px solid #141313;
        border-radius: 5px;
-     
+
 }
 
 .comentarios {
@@ -191,8 +193,7 @@ h5 {
 .contact {
        width: 700px;
        height: 450px;
-         padding: 10px 10px 10px 0px;
-       
+       padding: 10px 10px 10px 0px;
 
 
 }
@@ -200,7 +201,7 @@ h5 {
 .form-label {
        font-size: 16px;
        font-weight: bold;
-       }
+}
 
 .form-control {
        border: 2px solid #39393a;
@@ -211,47 +212,52 @@ h5 {
 }
 
 
-.nos {
-       width: 90%;
-       height: 600px;
-       display: flex;
-       justify-content: space-evenly;
-       align-items: center;
-       margin: 2px auto;
-       border-radius: 8px;
+/*nosotros*/
+#nosotros{padding-top: 120px;
+         background-image: url(../images/dorado.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}    
+   
+#nosotros h2{   font-size: 70px;
+       font-family: 'Quicksand', sans-serif;
+       padding-left: 20px;}
+
+ #nosotros p{padding-left: 20px;  
+ padding-right: 350px;   
+ 
+ }
+
+.card {
+       background: linear-gradient(#484646, #dcd7d7);
+       border: 1px solid  #cdd2d6;
+
 }
 
-.box {
-       width: 250px;
-       height: 520px;
-       border: 2px solid black;
-       padding: 7px;
-       box-shadow: 15px 20px 30px black;
-}
-
-.box:hover {
-       border: 3px solid black;
-}
-
+.card img{border-radius: 5px;}
 .card-title {
-       padding: 1px;
-       font-size: 19px;
-       font-weight: bold;
+       font-size: 20px;
+       color: white
 }
 
 .card-subtitle {
+       font-size: 18px;
+color: #cdd2d6;}
+
+.card-text{color: black;
        font-size: 16px;
-       text-align: center;
-       color: #484646;
-       font-weight: bold;
-}
-
-.card-text {
-       font-size: 14px;
-       padding: 0 1px;
+       
 }
 
 
+
+
+.log {
+       height: 500px;
+       margin-top: 40px;
+       padding-bottom: 100px;
+}
 
 
 footer {

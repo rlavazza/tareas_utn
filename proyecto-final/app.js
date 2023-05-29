@@ -5,9 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require ('express-session');
 
 var indexRouter = require('./routes/index');
 var nosotrosRouter= require('./routes/nosotros');
+var loginRouter = require ('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades')
 
 var app = express();
 
@@ -21,12 +24,33 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(session({
+  secret: '81dc9bdb52d04dc20036dbd8313ed055',     
+  resave: false,
+  saveUninitialized:true
+}))
+secured = async (req, res, next) => {
+  try {
+    console.log (req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+      } else {
+        res.redirect ('/admin/login')
+      }
+  } catch (error) {
+    console.log (error);
+  }
+}
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
+app.use('/admin/login', loginRouter) ; 
+app.use('/admin/novedades', secured, adminRouter); 
 
-app.get('/nosotros', function (req, res){
-  res.render('nosotros ') 
-})
+
+//app.get('/nosotros', function (req, res){
+//  res.render('nosotros ') 
+//})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
