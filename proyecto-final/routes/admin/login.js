@@ -2,11 +2,21 @@ var express = require('express');
 var router = express.Router();
 var usuariosModel = require ('./../../models/usuariosModel');
 
+//para loguearse
 router.get('/', function(req, res, next) {
   res.render('admin/login',{
     layout:'admin/layout',
   });
 });
+
+//para q se borre variable de logueo
+router.get('/logout', function(req, res, next) {
+req.session.destroy();
+res.render('admin/login',{
+  layout:'admin/layout',
+});
+});
+
 
 router.post('/', async (req, res, next) =>{
   try{
@@ -15,7 +25,7 @@ router.post('/', async (req, res, next) =>{
 
     console.log(req.body);
 
-    var data = await usuariosModel.getUserAndpassword (usuario, password);
+    var data = await usuariosModel.getUserAndPassword (usuario, password);
 
 if (data != undefined) {
   req.session.id_usuario = data.id;
