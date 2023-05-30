@@ -250,23 +250,28 @@ color: #cdd2d6;}
        
 }
 
-
-
-
 .log {
-       height: 450px;
-       margin-top: 40px;
-       padding-bottom: 100px;
+       height: 500px;
+       margin-top: 130px;
+     
 }
 
+/*admin novedades*/
+.out{font-size: 18px;
+padding-top: 25px;
+padding-left: 15px;
+color: white;
 
-.out{font-size: 28px;
-padding-top: 20px;
-padding-bottom: 10px;}
+}
 
-
-footer {
+.novedades {
+       background: linear-gradient(#7b7878, #d5cbcb);
+}
+footer {height: 50px;
+       padding-top: 10px;
        background-color: rgb(49, 47, 47);
+       color: white;
+       font-size: 15px;
 }
 
 html {
