@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+body {
+       font-family: 'Poppins', sans-serif;
+       color: bisque;
+}
+
+.nav-link,
+footer p,
+.fa-brands {
+       color: white
+}
+
+.nav-link:hover,
+.icono:hover {
+       color: white;
+       font-weight: bold;
+}
+
+.redes {
+       font-family: 'Quicksand', sans-serif;
+       font-size: 18px;
+       color: white;
+       font-weight: bold;
+       padding-left: 700px;
+}
+
+.navbar-expand-lg {
+       background-color: #db2205;
+}
+
+.portada {
+       background-image: url(../images/parapente.jpg);
+       background-size: cover;
+       height: 600px;
+       position: relative;
+}
+
+h1 {
+       font-size: 70px;
+       font-family: 'Quicksand', sans-serif;
+
+}
+
+h2 {
+       font-size: 52px;
+       font-family: 'Quicksand', sans-serif;
+
+}
+
+h3 {
+       font-size: 35px;
+}
+
+h4 {
+       font-size: 30px;
+       font-weight: bold;
+}
+
+.titulo {
+       padding-top: 35px;
+}
+
+
+.titulo p,
+#nosotros p {
+       font-size: 18px;
+}
+
+.mza {
+       font-size: 25px;
+       font-family: 'Quicksand', sans-serif;
+}
+
+.ubicacion {
+       padding-top: 198px;
+
+}
+
+.icono {
+       text-decoration: none;
+       color: white;
+
+}
+
+.contenido {
+       background-color: black;
+}
+
+.aventure {
+       margin-bottom: 50px;
+       box-sizing: border-box;
+}
+
+.info {
+       padding-left: 80px;
+}
+
+.pic {
+       display: flex;
+       justify-content: center;
+}
+
+.aventure img {
+       height: 368px;
+       width: 540px;
+       border: 2px solid #a09e9e;
+}
+
+.aventure p {
+       padding-top: 10px;
+
+}
+
+.contenido2 {
+       background: linear-gradient(#070707, #a9a7a7);
+}
+
+.ofertas {
+       height: 550px;
+       padding-top: 30px;
+       padding-left: 120px;
+       font-size: 24px;
+
+}
+
+.promos {
+       list-style-type: none;
+       padding: 0;
+}
+
+
+.promos li,
+.promos li a {
+       text-decoration: none;
+       color: bisque;
+       font-weight: bold;
+       font-size: 20px;
+}
+
+.promos li a:hover {
+       color: #7a7ad3;
+}
+
+.promos li a img,
+.promos li img {
+       margin-bottom: 28px;
+       margin-right: 20px;
+       border: 1px solid rgb(199, 193, 193);
+       width: 170px;
+       height: 95px;
+}
+
+.promos li a:hover img {
+       border: 3px solid black;
+}
+
+.picmod {
+       /*fotos de modal*/
+       border-radius: 4px;
+}
+
+.modal-content {
+       background-color: black;
+       color: bisque;
+       width: 560px;
+       border: 1px solid rgb(98, 94, 94);
+
+}
+
+.btn-close {
+       color: bisque;
+       font-weight: bold;
+}
+
+
+#galeria,
+#contacto {
+       display: flex;
+       justify-content: space-evenly;
+       padding-top: 80px;
+       margin: auto;
+}
+
+#galeria {
+       color: white;
+}
+
+
+.carousel {
+       width: 800px;
+       border: 3px solid #141313;
+       border-radius: 5px;
+
+}
+
+
+h5 {
+       font-size: 22px;
+}
+
+.mp {
+       width: 450px;
+       aspect-ratio: 1.2;
+       border: 2px solid #39393a;
+       border-radius: 5px;
+       margin: 4px;
+}
+
+.contact {
+       width: 700px;
+       height: 450px;
+       padding: 10px 10px 10px 0px;
+
+}
+
+
+#contacto {
+       color: black;
+
+}
+
+/*formulario de contacto*/
+.form-label {
+       font-size: 18px;
+       font-weight: bold;
+}
+
+.form-control {
+       border: 2px solid #39393a;
+}
+
+.submit:hover {
+       color: black;
+}
+
+
+/*nosotros*/
+#nosotros {
+       padding-top: 80px;
+       background-image: url(../images/IMG_3844.JPG);
+       background-size: cover;
+       height: 500px;
+       background-position: 40% 70%;
+       color: white;
+
+}
+
+#nosotros h2 {
+       font-size: 70px;
+       font-family: 'Quicksand', sans-serif;
+       padding-left: 20px;
+       text-shadow: -1px -1px 1px #aaa,
+              0px 4px 1px #00000080,
+              4px 4px 5px #000000b3,
+              0px 0px 7px #00000066;
+
+}
+
+#nosotros p {
+       padding-left: 20px;
+       background-color: #2d2b2b67;
+       border-radius: 10px;
+       font-weight: bold;
+
+}
+
+.card {
+       background: #ece9ea;
+       border: 2px solid #0e0d0d;
+
+}
+
+.card img {
+       border-radius: 5px;
+}
+
+.card-title {
+       font-size: 20px;
+       color: black;
+       font-weight: bold;
+}
+
+.card-subtitle {
+       font-size: 18px;
+       color: #343536;
+}
+
+.card-text {
+       color: black;
+       font-size: 16px;
+
+}
+
+
+footer {
+       height: 60px;
+       padding-top: 20px;
+       background-color: rgb(49, 47, 47);
+       color: white;
+       font-size: 15px;
+}
+
+/*diseños admin*/
+.log {
+       height: 500px;
+       margin-top: 130px;
+
+}
+
+.saludo {
+       font-size: 18px;
+       padding-top: 25px;
+       padding-left: 15px;
+       color: white;
+}
+
+.novedades {
+       background: #4b4747
+}
+
+.novedades h3 {
+       color: white;
+}
+
+.lupa {
+       border-radius: 5px;
+       padding: 4px;
+}
+
+.form-admin {
+       color: white;
+       font-size: 18px;
+}
+
+.new:hover {
+       border: 1px solid white;
+       font-weight: bold;
+}
+
+.table {
+       background-color: whitesmoke;
+}
+
+thead {
+       background-color: #303033;
+       color: white;
+}
+
+/*txt avisos en admin*/
+.error {
+       color: white;
+       background-color: #4d1185;
+       border-radius: 5px;
+       font-size: 18px;
+       font-weight: bold;
+       padding: 10px;
+}
+
+
+html {
+       scroll-behavior: smooth;
+}
+
+.scroll-section {
+       scroll-margin-top: 60px;
+}

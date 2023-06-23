@@ -1,0 +1,38 @@
+<div class="container-fluid novedades pt-5">
+    <div class="datos col-8 offset-2 px-5 py-5">    
+    <h3 class="pb-4">Modificar la novedad</h3>
+                <form action="/admin/novedades/modificar" method="post" class="form-admin"  enctype="multipart/form-data">
+                    <div class="py-1">
+                        <input type="hidden" class="form-control" value="{{novedad.id}}" name="id">     
+                      </div>
+                       <div class="py-2">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" name="titulo"  value="{{novedad.titulo}}">
+                    </div>
+                        <div class="py-2">
+                            <label for="cuerpo">Descripción</label>
+                        <textarea class="form-control"  name="cuerpo" >{{novedad.cuerpo}}</textarea>
+                       <!--  textarea no lleva value para traer la info  -->
+                    </div>
+                       <div class="py-2">
+                        <label for="precio">Precio:</label>
+                        <input type="text" class="form-control" name="precio"  value="{{novedad.precio}}">
+                    </div>
+      <div class="py-2">
+                        <label>Imagen:</label> <br>
+                        <input type="file"  name="imagen" id="imagen" class="upimg" >
+                    </div> 
+                    <div class="py-2">
+                        <label>Eliminar imagen actual:</label>
+                        <input type="checkbox" name="img_delete" id="img_delete"  value="1">
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                    </div>
+      <div class="py-2">
+
+                    <button class="new btn btn-dark  border-light px-3 mt-2 mb-4" type="submit">Modificar</button>
+                </form>
+                {{#if error}}
+                <span class="error">{{message}}</span>
+                {{/if}}
+            </div>
+            </div>

@@ -1,0 +1,61 @@
+<div class="container-fluid novedades pt-5">
+    <div class="row pt-2">
+
+        <div class=" col-8 saludo">Hola {{empleado}}!
+            <a href="/admin/login/logout" class="new btn btn-sm btn-dark ms-3"><i class="fa fa-sign-out"></i> Cerrar
+                sesión</a>
+        </div>
+        <div class="col-3 text-end pt-4">
+            <form action="/admin/novedades" method="get">
+                <input type="search" class="lupa" placeholder="Buscar" aria-label="Buscar" name="q" {{#if q}}value="{{q}}" {{/if}}>
+                          
+                <button class="new btn btn-dark" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="row pt-3 pb-1">
+        <div class="col-9 offset-1">
+            <h3>Listado de novedades</h3>
+        </div>
+        <div class="col-1 text-end">
+            <a href="/admin/novedades/agregar" class="new btn btn-dark"> <i class="fa fa-plus"></i>Nuevo</a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-end">
+                            <a href="/admin/novedades/modificar/{{id}}" class=" btn btn-sm btn-outline-dark"> <i
+                                    class="fa fa-pencil"></i> </a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class=" btn btn-sm btn-outline-dark"> <i
+                                    class="fa fa-trash"></i> </a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+          {{#if is_search}}
+            {{#unless novedades.length}}
+            <p class="error">No se encontraron resultados para "<strong>{{q}}</strong>" </p>
+            {{/unless}}
+            {{/if}}  
+
+        </div>
+    </div>
+</div>
